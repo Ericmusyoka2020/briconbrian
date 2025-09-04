@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - bricon Building Company Limited</title>
+    <meta name="description" content="View bricon Building Company's impressive portfolio of completed construction projects including residential, commercial, and renovation work.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>bricon</h2>
+                <span>Building Company Limited</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="quote.html" class="btn btn-primary">Request Quote</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Project Portfolio</h1>
+            <p>Showcasing our commitment to excellence in construction</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="renovation">Renovation</button>
+                <button class="filter-btn" data-filter="industrial">Industrial</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-item" data-category="residential">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Luxury villa project">
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3>Luxury Family Villa</h3>
+                                <p class="project-location">Karen, Nairobi</p>
+                                <p class="project-type">Residential • 4 Bedrooms</p>
+                                <button class="btn btn-outline project-btn" onclick="openProjectModal('villa')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item" data-category="commercial">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Office building project">
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3>Corporate Office Complex</h3>
+                                <p class="project-location">Westlands, Nairobi</p>
+                                <p class="project-type">Commercial • 8 Floors</p>
+                                <button class="btn btn-outline project-btn" onclick="openProjectModal('office')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item" data-category="residential">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Apartment complex">
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3>Modern Apartment Complex</h3>
+                                <p class="project-location">Kilimani, Nairobi</p>
+                                <p class="project-type">Residential • 24 Units</p>
+                                <button class="btn btn-outline project-btn" onclick="openProjectModal('apartment')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-item" data-category="renovation">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Home renovation">
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3>Complete Home Renovation</h3>
+                                <p class="project-location">Muthaiga, Nairobi</p>
+                                <p class="project-type">Renovation • Full House</p>
+                                <button class="btn btn-outline project-btn" onclick="openProjectModal('renovation')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-item" data-category="commercial">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Retail center">
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3>Shopping Center</h3>
+                                <p class="project-location">Nakuru, Kenya</p>
+                                <p class="project-type">Commercial • Retail</p>
+                                <button class="btn btn-outline project-btn" onclick="openProjectModal('retail')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-item" data-category="industrial">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Industrial facility">
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3>Manufacturing Facility</h3>
+                                <p class="project-location">Mombasa, Kenya</p>
+                                <p class="project-type">Industrial • Warehouse</p>
+                                <button class="btn btn-outline project-btn" onclick="openProjectModal('industrial')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Get in touch with our experts for a free consultation and detailed quote</p>
+                <div class="cta-buttons">
+                    <a href="quote.html" class="btn btn-primary">Request Free Quote</a>
+                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>bricon</h3>
+                        <p>Building Company Limited</p>
+                    </div>
+                    <p class="footer-description">Professional construction services with a commitment to quality, safety, and customer satisfaction.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">💼</a>
+                        <a href="#" class="social-link">📱</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="quote.html">Get Quote</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#residential">Residential Construction</a></li>
+                        <li><a href="services.html#commercial">Commercial Building</a></li>
+                        <li><a href="services.html#renovation">Renovation & Remodeling</a></li>
+                        <li><a href="services.html#design">Architectural Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <strong>📞 Phone:</strong>
+                        <p>+254 (0) 123 456 789</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>✉️ Email:</strong>
+                        <p>info@briconbuilding.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>📍 Address:</strong>
+                        <p>123 Construction Avenue<br>Nairobi, Kenya</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 bricon Building Company Limited. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Quote - bricon Building Company Limited</title>
+    <meta name="description" content="Get a free quote for your construction project from bricon Building Company Limited. Quick and easy online quote request form.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>bricon</h2>
+                <span>Building Company Limited</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="quote.html" class="btn btn-primary">Request Quote</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Request a Free Quote</h1>
+            <p>Get a detailed estimate for your construction project</p>
+        </div>
+    </section>
+
+    <!-- Quote Form -->
+    <section class="quote-form-section">
+        <div class="container">
+            <div class="quote-content">
+                <div class="quote-info">
+                    <h2>Get Your Free Construction Quote</h2>
+                    <p>Fill out the form below and our team will provide you with a detailed quote within 24-48 hours.</p>
+                    
+                    <div class="quote-benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">📋</div>
+                            <div>
+                                <h4>Detailed Estimate</h4>
+                                <p>Complete breakdown of costs and timeline</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">⚡</div>
+                            <div>
+                                <h4>Quick Response</h4>
+                                <p>We respond to all quote requests within 24 hours</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">💰</div>
+                            <div>
+                                <h4>No Hidden Costs</h4>
+                                <p>Transparent pricing with no surprise charges</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🎯</div>
+                            <div>
+                                <h4>Custom Solutions</h4>
+                                <p>Tailored quotes based on your specific needs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3>Or Contact Us Directly</h3>
+                        <div class="contact-options">
+                            <div class="contact-option">
+                                <strong>📞 Phone:</strong>
+                                <p>+254 (0) 123 456 789</p>
+                            </div>
+                            <div class="contact-option">
+                                <strong>✉️ Email:</strong>
+                                <p>quotes@briconbuilding.com</p>
+                            </div>
+                            <div class="contact-option">
+                                <strong>💬 WhatsApp:</strong>
+                                <p>+254 (0) 700 123 456</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-form-container">
+                    <form id="quoteForm" class="quote-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="projectType">Project Type *</label>
+                            <select id="projectType" name="projectType" required>
+                                <option value="">Select Project Type</option>
+                                <option value="residential-new">New Residential Construction</option>
+                                <option value="residential-renovation">Residential Renovation</option>
+                                <option value="commercial-new">New Commercial Building</option>
+                                <option value="commercial-renovation">Commercial Renovation</option>
+                                <option value="industrial">Industrial Construction</option>
+                                <option value="architectural">Architectural Design</option>
+                                <option value="materials">Building Materials Supply</option>
+                                <option value="other">Other (Please specify)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="projectLocation">Project Location *</label>
+                            <input type="text" id="projectLocation" name="projectLocation" placeholder="City, Country" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="budget">Estimated Budget</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select Budget Range</option>
+                                    <option value="under-25k">Under $25,000</option>
+                                    <option value="25k-50k">$25,000 - $50,000</option>
+                                    <option value="50k-100k">$50,000 - $100,000</option>
+                                    <option value="100k-250k">$100,000 - $250,000</option>
+                                    <option value="250k-500k">$250,000 - $500,000</option>
+                                    <option value="over-500k">Over $500,000</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="timeline">Preferred Timeline</label>
+                                <select id="timeline" name="timeline">
+                                    <option value="">Select Timeline</option>
+                                    <option value="asap">As soon as possible</option>
+                                    <option value="1-3months">1-3 months</option>
+                                    <option value="3-6months">3-6 months</option>
+                                    <option value="6-12months">6-12 months</option>
+                                    <option value="over-1year">Over 1 year</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="projectDescription">Project Description *</label>
+                            <textarea id="projectDescription" name="projectDescription" rows="5" placeholder="Please provide details about your project, including size, specific requirements, and any special considerations..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                I would like to receive updates about bricon services and construction tips
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit">Request Free Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>bricon</h3>
+                        <p>Building Company Limited</p>
+                    </div>
+                    <p class="footer-description">Professional construction services with a commitment to quality, safety, and customer satisfaction.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">💼</a>
+                        <a href="#" class="social-link">📱</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="quote.html">Get Quote</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#residential">Residential Construction</a></li>
+                        <li><a href="services.html#commercial">Commercial Building</a></li>
+                        <li><a href="services.html#renovation">Renovation & Remodeling</a></li>
+                        <li><a href="services.html#design">Architectural Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <strong>📞 Phone:</strong>
+                        <p>+254 (0) 123 456 789</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>✉️ Email:</strong>
+                        <p>info@briconbuilding.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>📍 Address:</strong>
+                        <p>123 Construction Avenue<br>Nairobi, Kenya</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 bricon Building Company Limited. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="quote.js"></script>
+</body>
+</html>
