@@ -232,7 +232,7 @@ function sendQuoteNotification(quoteData) {
     // For now, we'll just log it and show what would be sent
     
     console.log('Email notification would be sent with:', {
-        to: 'quotes@briconbuilding.com',
+        to: 'mwinzibrian6@gmail.com',
         subject: `New Quote Request - ${quoteData.projectType}`,
         data: quoteData,
         timestamp: new Date().toISOString()

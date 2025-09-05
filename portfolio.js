@@ -78,136 +78,136 @@ function openProjectModal(projectId) {
     
     // Project data
     const projects = {
-        villa: {
-            title: 'Luxury Family Villa',
-            location: 'Karen, Nairobi',
+        makueni_villa: {
+            title: 'Modern Family Villa',
+            location: 'Makueni County',
             type: 'Residential Construction',
-            duration: '8 months',
-            budget: '$350,000',
-            description: 'A stunning 4-bedroom villa featuring modern architecture with sustainable design elements. The project included custom interior design, landscaping, and smart home automation.',
+            duration: '6 months',
+            budget: 'KSh 2.5M',
+            description: 'A beautiful 3-bedroom family villa built with modern construction techniques and quality materials. Features include spacious living areas, modern kitchen, and well-designed outdoor spaces.',
             features: [
-                '4 bedrooms with en-suite bathrooms',
+                '3 bedrooms with modern bathrooms',
                 'Open-plan living and dining area',
-                'Modern kitchen with premium appliances',
-                'Swimming pool and outdoor entertainment area',
-                'Solar panel system for energy efficiency',
-                'Smart home automation system'
+                'Modern kitchen with quality fittings',
+                'Outdoor entertainment area',
+                'Quality roofing and finishing',
+                'Proper drainage and water systems'
             ],
             images: [
                 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800',
                 'https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=800'
             ],
-            client: 'Private Family',
+            client: 'Makueni Family',
             year: '2024'
         },
-        office: {
-            title: 'Corporate Office Complex',
-            location: 'Westlands, Nairobi',
-            type: 'Commercial Construction',
-            duration: '14 months',
-            budget: '$2.5M',
-            description: 'An 8-floor modern office complex with state-of-the-art facilities, parking for 200+ vehicles, and LEED certification for environmental sustainability.',
-            features: [
-                '8 floors with flexible office spaces',
-                'Underground parking garage',
-                'Conference facilities and meeting rooms',
-                'Cafeteria and recreational areas',
-                'High-speed elevators and security systems',
-                'Green building certification'
-            ],
-            images: [
-                'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800',
-                'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800'
-            ],
-            client: 'TechCorp Solutions',
-            year: '2023'
-        },
-        apartment: {
-            title: 'Modern Apartment Complex',
-            location: 'Kilimani, Nairobi',
+        mombasa_apartments: {
+            title: 'Mombasa Road Apartments',
+            location: 'Mombasa Road Corridor',
             type: 'Residential Development',
-            duration: '18 months',
-            budget: '$1.8M',
-            description: 'A 24-unit apartment complex featuring contemporary design with communal facilities including gym, rooftop garden, and children\'s play area.',
+            duration: '12 months',
+            budget: 'KSh 8M',
+            description: 'A modern 12-unit apartment complex strategically located along the Mombasa Road corridor. Features quality construction with modern amenities and secure parking.',
             features: [
-                '24 residential units (1, 2, and 3 bedrooms)',
-                'Rooftop garden and recreation area',
-                'Gym and fitness center',
-                'Children\'s playground',
-                'Backup generator and water systems',
-                'Secure parking and 24/7 security'
+                '12 residential units (2 and 3 bedrooms)',
+                'Secure parking for residents',
+                'Modern kitchen and bathroom fittings',
+                'Quality roofing and waterproofing',
+                '24/7 security and water supply',
+                'Well-designed common areas'
             ],
             images: [
                 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
                 'https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=800'
             ],
-            client: 'Urban Living Properties',
+            client: 'Mombasa Road Developers',
             year: '2023'
         },
-        renovation: {
-            title: 'Complete Home Renovation',
-            location: 'Muthaiga, Nairobi',
+        machakos_commercial: {
+            title: 'Machakos Commercial Center',
+            location: 'Machakos County',
+            type: 'Commercial Construction',
+            duration: '10 months',
+            budget: 'KSh 5M',
+            description: 'A modern commercial building designed for office and retail spaces. Features quality construction with modern amenities and ample parking space.',
+            features: [
+                'Ground floor retail spaces',
+                'Upper floor office spaces',
+                'Modern electrical and plumbing systems',
+                'Quality finishing and fixtures',
+                'Adequate parking space',
+                'Professional building design'
+            ],
+            images: [
+                'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800',
+                'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800'
+            ],
+            client: 'Machakos Business Group',
+            year: '2023'
+        },
+        makueni_renovation: {
+            title: 'House Renovation Project',
+            location: 'Makueni Town',
             type: 'Residential Renovation',
-            duration: '6 months',
-            budget: '$120,000',
-            description: 'Complete transformation of a 1980s home into a modern family residence while preserving its original charm and character.',
+            duration: '4 months',
+            budget: 'KSh 800K',
+            description: 'Complete renovation of an existing family home including modern kitchen, updated bathrooms, new roofing, and improved electrical systems.',
             features: [
                 'Kitchen and bathroom modernization',
-                'Open-plan living area creation',
-                'Energy-efficient windows and insulation',
-                'Landscaping and outdoor spaces',
+                'New roofing and ceiling work',
+                'Modern windows and doors',
+                'Improved outdoor spaces',
                 'Updated electrical and plumbing systems',
-                'Custom built-in storage solutions'
+                'Quality painting and finishing'
             ],
             images: [
                 'https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg?auto=compress&cs=tinysrgb&w=800',
                 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800'
             ],
-            client: 'The Mwangi Family',
+            client: 'Makueni Homeowner',
             year: '2024'
         },
-        retail: {
-            title: 'Shopping Center',
-            location: 'Nakuru, Kenya',
+        wote_retail: {
+            title: 'Retail Shopping Center',
+            location: 'Wote, Makueni',
             type: 'Commercial Development',
-            duration: '12 months',
-            budget: '$1.2M',
-            description: 'Modern shopping center with 20 retail units, food court, and ample parking designed to serve the growing Nakuru community.',
+            duration: '8 months',
+            budget: 'KSh 3.5M',
+            description: 'A modern retail center with multiple shops and commercial spaces designed to serve the Wote community with quality construction and modern amenities.',
             features: [
-                '20 retail units of varying sizes',
-                'Central food court and dining area',
-                'Ample parking for 150+ vehicles',
+                '8 retail units of varying sizes',
+                'Central common area',
+                'Adequate parking space',
                 'Modern HVAC and lighting systems',
                 'Security systems and fire safety',
-                'Accessible design for all users'
+                'Quality finishing throughout'
             ],
             images: [
                 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800',
                 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800'
             ],
-            client: 'Nakuru Development Group',
+            client: 'Wote Business Community',
             year: '2023'
         },
-        industrial: {
-            title: 'Manufacturing Facility',
-            location: 'Mombasa, Kenya',
+        mombasa_warehouse: {
+            title: 'Warehouse Construction',
+            location: 'Mombasa Road Industrial Area',
             type: 'Industrial Construction',
-            duration: '10 months',
-            budget: '$800,000',
-            description: 'Large-scale manufacturing facility with specialized equipment foundations, crane systems, and logistics areas designed for efficient operations.',
+            duration: '6 months',
+            budget: 'KSh 4M',
+            description: 'A large warehouse facility built for storage and logistics operations. Features strong foundations, high ceilings, and efficient loading areas.',
             features: [
-                'Heavy-duty concrete foundations',
-                'Overhead crane systems',
+                'Strong concrete foundations',
+                'High ceiling construction',
                 'Large loading and unloading bays',
-                'Office and administrative areas',
-                'Employee facilities and safety systems',
-                'Waste management and utilities'
+                'Office and administrative area',
+                'Security and safety systems',
+                'Proper drainage and utilities'
             ],
             images: [
                 'https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=800',
                 'https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&w=800'
             ],
-            client: 'ManufacturingCorp Kenya',
+            client: 'Logistics Company Kenya',
             year: '2024'
         }
     };

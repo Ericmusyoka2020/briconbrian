@@ -154,7 +154,7 @@ function initializeWhatsAppIntegration() {
         button.addEventListener('click', function(e) {
             e.preventDefault();
             
-            const phoneNumber = this.getAttribute('data-whatsapp') || '+254700123456';
+            const phoneNumber = this.getAttribute('data-whatsapp') || '+254116152971';
             const message = this.getAttribute('data-message') || 
                 'Hello, I am interested in your construction services. Could you please provide more information?';
             
@@ -179,7 +179,7 @@ function addWhatsAppContactMethod() {
                 <div class="contact-icon">💬</div>
                 <div>
                     <h4>WhatsApp</h4>
-                    <p><a href="https://wa.me/254700123456?text=Hello%2C%20I%20am%20interested%20in%20your%20construction%20services" target="_blank">+254 (0) 700 123 456</a></p>
+                    <p><a href="https://wa.me/254116152971?text=Hello%2C%20I%20am%20interested%20in%20your%20construction%20services" target="_blank">+254 (0) 116 152 971</a></p>
                     <small>Quick responses during business hours</small>
                 </div>
             `;
